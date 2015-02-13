@@ -1,5 +1,6 @@
 package com.traz9g.fleamarket.activities;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -12,10 +13,11 @@ import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
 import com.traz9g.fleamarket.R;
+import com.traz9g.fleamarket.defines.LocalStorageDefines;
 import com.traz9g.fleamarket.util.LocalStorage;
 
-public class RegistrationActivity extends ActionBarActivity {
-    private final String TAG = RegistrationActivity.class.getSimpleName();
+public class SignUpActivity extends ActionBarActivity {
+    private final String TAG = SignUpActivity.class.getSimpleName();
 
     private EditText mEmail, mPassword;
 
@@ -29,6 +31,8 @@ public class RegistrationActivity extends ActionBarActivity {
     }
 
     public void register(View view) {
+        Log.i(TAG, "register()");
+
         String email = mEmail.getText().toString();
         String password = mPassword.getText().toString();
 
@@ -47,12 +51,14 @@ public class RegistrationActivity extends ActionBarActivity {
             public void handleResponse(BackendlessUser backendlessUser) {
                 Log.i(TAG, backendlessUser.toString());
 
-                LocalStorage.setBoolean(LocalStorage.SIGN_UP, true);
+                LocalStorage.setBoolean(LocalStorageDefines.SIGN_UP, true);
+                setResult(Activity.RESULT_OK);
+                finish();
             }
 
             @Override
             public void handleFault(BackendlessFault backendlessFault) {
-
+                Log.e(TAG, backendlessFault.toString());
             }
         });
     }
