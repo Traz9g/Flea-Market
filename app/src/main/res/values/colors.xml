@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--Main colors-->
+    <color name="app50">#FFF3E0</color>
+    <color name="app100">#FFE0B2</color>
+    <color name="app200">#FFCC80</color>
+    <color name="app300">#FFB74D</color>
+    <color name="app400">#FFA726</color>
+    <color name="app500">#FF9800</color>
+    <color name="app600">#FB8C00</color>
+    <color name="app700">#F57C00</color>
+    <color name="app800">#EF6C00</color>
+    <color name="app900">#E65100</color>
+    <color name="appA100">#FFD180</color>
+    <color name="appA200">#FFAB40</color>
+    <color name="appA400">#FF9100</color>
+    <color name="appA700">#FF6D00</color>
+    
+    <!--Contrast colors-->
+    <color name="contrast50">#E0F2F1</color>
+    <color name="contrast100">#B2DFDB</color>
+    <color name="contrast200">#80CBC4</color>
+    <color name="contrast300">#4DB6AC</color>
+    <color name="contrast400">#26A69A</color>
+    <color name="contrast500">#009688</color>
+    <color name="contrast600">#00897B</color>
+    <color name="contrast700">#00796B</color>
+    <color name="contrast800">#00695C</color>
+    <color name="contrast900">#004D40</color>
+    <color name="contrastA100">#A7FFEB</color>
+    <color name="contrastA200">#64FFDA</color>
+    <color name="contrastA400">#1DE9B6</color>
+    <color name="contrastA700">#00BFA5</color>
+
+    <!--Fifty Shades of Grey-->
+    <color name="grey50">#FAFAFA</color>
+    <color name="grey100">#F5F5F5</color>
+    <color name="grey200">#EEEEEE</color>
+    <color name="grey300">#E0E0E0</color>
+    <color name="grey400">#BDBDBD</color>
+    <color name="grey500">#9E9E9E</color>
+    <color name="grey600">#757575</color>
+    <color name="grey700">#616161</color>
+    <color name="grey800">#424242</color>
+    <color name="grey900">#212121</color>
+
+    <!--And the most important colors-->
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+</resources>
